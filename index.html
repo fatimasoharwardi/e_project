@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Stationery</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <div class="logo-container">
+                    <img src="Screenshot_2025-01-30-10-59-01-36-removebg-preview.png" alt="Universal Stationery" class="logo-img">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-universal">UNIVERSAL</span>
+                    <span class="brand-stationery">Stationery</span>
+                </div>
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-tags"></i> Brands</a></li>
+                <li><a href="#"><i class="fas fa-box"></i> Products</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="auth-modal" id="authModal">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="card-side card-front">
+                    <div class="auth-header">
+                        <h2>Welcome Back</h2>
+                        <div class="pen-icon"><i class="fas fa-pen"></i></div>
+                    </div>
+                    <form class="auth-form" id="loginForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="auth-btn">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="#" class="flip-btn">Sign Up</a></p>
+                </div>
+                <div class="card-side card-back">
+                    <div class="auth-header">
+                        <h2>Join Us</h2>
+                        <div class="pen-icon"><i class="fas fa-pencil-alt"></i></div>
+                    </div>
+                    <form class="auth-form" id="signupForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="auth-btn">Sign Up</button>
+                    </form>
+                    <p>Already have an account? <a href="#" class="flip-btn">Login</a></p>
+                </div>
+            </div>
+            <button class="close-modal">×</button>
+        </div>
+    </div>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-container">
+            <h3>Your Cart</h3>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+            <button class="close-cart">×</button>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Write Your Story<br><span class="highlight">With Style</span></h1>
+            <p>Discover a curated collection of premium writing instruments and stationery essentials.</p>
+            <div class="buttons">
+                <a href="#" class="btn black">Explore Collection <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="btn white">View Brands <i class="fas fa-tags"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="pen-image.jpg" alt="Premium Pen">
+        </div>
+    </section>
+
+    <section class="brands">
+        <h2 class="section-title">Featured Brands</h2>
+        <div class="title-line"></div>
+        <div class="brand-cards">
+            <div class="brand-card">
+                <img src="parker.png" alt="Parker">
+                <h3>Parker</h3>
+                <p>Premium writing instruments since 1888</p>
+            </div>
+            <div class="brand-card">
+                <img src="montblanc.png" alt="Montblanc">
+                <h3>Montblanc</h3>
+                <p>Luxury craftsmanship and timeless designs</p>
+            </div>
+            <div class="brand-card">
+                <img src="faber.png" alt="Faber-Castell">
+                <h3>Faber-Castell</h3>
+                <p>Quality art supplies and writing tools</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2 class="section-title">Popular Products</h2>
+        <div class="title-line"></div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="product1.jpg" alt="Fountain Pen">
+                    <button class="cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <div class="hover-overlay">
+                        <button class="view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>Premium Fountain Pen</h4>
+                    <p class="product-price">$129.99</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="product2.jpg" alt="Luxury Notebook">
+                    <button class="cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <div class="hover-overlay">
+                        <button class="view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>Classic Leather Notebook</h4>
+                    <p class="product-price">$49.99</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="product3.jpg" alt="Pen Set">
+                    <button class="cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <div class="hover-overlay">
+                        <button class="view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>Premium Pen Set</h4>
+                    <p class="product-price">$89.99</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="product4.jpg" alt="Desk Organizer">
+                    <button class="cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <div class="hover-overlay">
+                        <button class="view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>Modern Desk Organizer</h4>
+                    <p class="product-price">$69.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Universal Stationery</h3>
+                <p>Crafting your writing experience since 1995</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Universal Stationery. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
